@@ -18,11 +18,11 @@ class Products extends Component {
   }
   render() {
     const productItems = this.props.products.map(product => (
-      <div className="bookBlock" key={product.id}>
+      <div className="bookBlock" key={product.rank}>
         <div className="thumbnail text-center">
           <div>
             <img
-             alt={product.title}
+              alt={product.title}
               src={product.book_image}
               style={{ width: "220px", height: "100px" }}
             ></img>

@@ -12,7 +12,11 @@ class Basket extends Component {
   render() {
     const { cartItems } = this.props;
 
-    return <div>{cartItems.length === 0 ? 0 : <>{cartItems.length} </>}</div>;
+    return (
+      <div id="cartItems">
+        {cartItems.length === 0 ? 0 : <>{cartItems.length} </>}
+      </div>
+    );
   }
 }
 const mapStateToProps = state => ({

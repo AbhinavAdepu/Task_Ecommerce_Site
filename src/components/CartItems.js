@@ -112,7 +112,7 @@ class CartItems extends Component {
               <div className="shopping-bag">
                 <ul style={{ marginLeft: -25 }}>
                   {cartItems.map(item => (
-                    <li key={item.id}>
+                    <li key={item.rank}>
                       <div>
                         <img alt={item.title} src={item.book_image} />
                         <b>{item.title}</b>
