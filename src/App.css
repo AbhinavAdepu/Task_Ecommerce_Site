@@ -1,0 +1,248 @@
+/**
+ * @description CSS FOR BOOKS APPLICATION
+ * @author Abhinav Adepu
+ */
+
+/*App CSS START*/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+.mycart-class {
+  display: flex;
+  justify-content: space-around;
+}
+.shopping-bag ul li {
+  border-bottom: 1px solid #c1c1c1;
+  margin: 15px 5px;
+  list-style: none;
+}
+.shopping-bag ul li > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shopping-bag ul li img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.addressForm input {
+  display: block;
+  margin: 12px 0px;
+  border-radius: 5px;
+  border-color: #c1c1c1;
+  border: 1px solid;
+  height: 31px;
+  width: 100%;
+}
+/*App CSS End*/
+
+/*Book CSS Start*/
+.book-row {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.bookBlock {
+  width: 220px;
+  margin: 5px;
+  background: #a57979;
+  height: 200px;
+}
+@media only screen and (min-width: 768px) {
+  .bookBlock {
+    width: 220px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*Book CSS End*/
+
+/*Header CSS Start*/
+.container-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  background-color: #c1c1c1;
+}
+.header-left {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.header-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-right > div {
+  margin: 0 10px;
+}
+.header-right a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+.cartValue {
+  background: red;
+  width: 10px;
+  height: 12px;
+  border-radius: 50%;
+  /* position: absolute; */
+  /* top: 25px; */
+  /* right: 30px; */
+  top: -1px;
+  position: relative;
+  left: -5px;
+  text-align: center;
+  font-size: 10px;
+}
+.cartFlex {
+  display: flex;
+}
+/*Container CSS End*/
+/*Images CSS Start*/
+.thumbnail.text-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail.text-center div:first-child {
+  height: 100px;
+}
+
+.thumbnail.text-center div:last-child {
+  height: 100px;
+  background: #c1c1c1;
+}
+
+.thumbnail.text-center div:last-child p {
+  text-align: left;
+  margin: 0px 2px 0 10px;
+  padding: 2px;
+}
+/*Images CSS End*/
+
+/*BuyNow CSS Start*/
+.buyNowbuttonbg {
+  background: #a57979;
+  color: #ffffff;
+  border: 0;
+  padding: 4px;
+  margin-left: 6px;
+}
+.buyNowbuttonbg a {
+  text-decoration: none;
+  color: #fff;
+}
+.buyNowbutton {
+  background: #a57979;
+  color: #ffffff;
+  border: 0;
+  padding: 4px;
+  width: 80%;
+}
+.details-actions > ul > li:last-child {
+  display: flex;
+  flex-direction: column;
+}
+.detail-button-flex {
+  display: flex;
+  margin-top: 18px;
+  cursor: pointer;
+}
+.detail-button-flex button:last-child {
+  margin-left: 10px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.back-to-results {
+  padding: 1rem;
+}
+.back-to-results h3 {
+  margin-bottom: 0;
+}
+.details-image > img {
+  width: 160px;
+  height: 160px;
+  margin: 16px;
+}
+.details-info h3 {
+  margin-bottom: 0;
+}
+.details-info > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.details-actions {
+  border: 1px #e0e0e0 solid;
+  border-radius: 0.5rem;
+  width: 80%;
+  background: #c1c1c1;
+  left: 15%;
+  position: relative;
+}
+.details-info > ul,
+.details-actions > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.price {
+  color: #c04000;
+}
+/*BuyNow CSS End*/
+
+/* My Orders Start*/
+
+.card-top {
+  display: flex;
+  background: #e9e1e0;
+  width: calc(100% - 28px);
+  justify-content: space-between;
+  padding: 8px 14px;
+}
+
+.card-block {
+  width: 90%;
+  border: 1px solid #c1c1c1;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+.noItems {
+  margin-top: 100px;
+}
+
+.card-bottom {
+  display: flex;
+}
+
+.card-bottom-right p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.card-bottom-right {
+  margin-left: 10px;
+}
+/* My Orders End*/
